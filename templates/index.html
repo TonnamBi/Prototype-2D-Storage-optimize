@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Storage Optimization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <h1>AI Storage Optimization</h1>
+
+    <div id="input-container">
+        <h3>Enter Square Dimensions:</h3>
+        <div class="square-input">
+            Width: <input type="number" class="width" min="1" max="20">
+            Height: <input type="number" class="height" min="1" max="20">
+        </div>
+        <button id="add-square">Add Square</button>
+    </div>
+
+    <h3>Entered Squares (<span id="square-count">0</span>):</h3>
+    <ul id="square-list"></ul>
+
+    <button id="calculate">Calculate</button>
+
+    <h3>Optimized Placement Result:</h3>
+    <img id="result-image" src="" alt="Optimized placement will appear here">
+
+
+    <div id="unplaced-squares">
+      
+    </div>
+</body>
+</html>
